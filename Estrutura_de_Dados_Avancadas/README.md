@@ -99,10 +99,10 @@ Tecla P: Volta para a fase anterior.
  ├── 📄 main.py                                      # Código-fonte principal do jogo
  └── 📄 README.md                                    # Documentação do projeto
 👥 **Integrantes do Grupo**
-Gustavo Alves  
-Arthur Bernardo
-Kelly da Silva
-Brenda Ribeiro
+* [Gustavo Alves](https://github.com/usuario_gustavo)
+* [Arthur Bernardo](https://github.com/usuario_arthur)
+* [Kelly da Silva](https://github.com/usuario_kelly)
+* [Brenda Ribeiro]([https://github.com/usuario_brenda](https://github.com/BrendaRibss/Estrutura_de_dados_II))
 Disciplina: Estruturas de Dados II   
 Curso: Ciência da Computação   
 Turma: N1 / Ciência da Computação   
