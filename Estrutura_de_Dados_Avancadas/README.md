@@ -102,7 +102,8 @@ Tecla P: Volta para a fase anterior.
 * [Gustavo Alves](https://github.com/usuario_gustavo)
 * [Arthur Bernardo](https://github.com/usuario_arthur)
 * [Kelly da Silva](https://github.com/usuario_kelly)
-* [Brenda Ribeiro]([[https://github.com/BrendaRibss](https://github.com/BrendaRibss/Estrutura_de_dados_II)](https://github.com/BrendaRibss))
+* [Brenda Ribeiro]([[https://github.com/BrendaRibss]])
+  
 Disciplina: Estruturas de Dados II   
 Curso: Ciência da Computação   
 Turma: N1 / Ciência da Computação   
