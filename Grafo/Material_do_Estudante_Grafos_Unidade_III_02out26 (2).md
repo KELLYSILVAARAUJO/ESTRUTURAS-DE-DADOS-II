@@ -165,8 +165,13 @@ mão única.
     -   seu grau de saída.
 6.  Explique por que um grafo não dirigido não representa adequadamente
     essa situação.
-    
+    <img width="191" height="173" alt="XaaIIJxyNSbFAEgn" src="https://github.com/user-attachments/assets/aa1c0414-2705-49e8-a19e-027f4e1f2b89" />
+V = {1, 2, 3, 4}
+E = {(1, 2), (1, 3), (2, 4), (3, 4)}
 
+Escolhendo o vértice 1:
+Grau de entrada - 0 (não há setas a apontar para o vértice 1). 
+Grau de saída - 2 (saem duas setas: para o vértice 2 e para o vértice 3). 
 ### Plataformas
 
 -   diagrams.net;
