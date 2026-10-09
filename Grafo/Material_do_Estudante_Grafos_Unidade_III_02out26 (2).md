@@ -64,13 +64,16 @@ Considere:
 > **Atenção:** a aresta `(4,4)` é um laço. No cálculo do grau, um laço é
 > contado duas vezes.
 
-Ordem |V| = 5.
-Tamanho |E| = 6.
-Grau do vértice 1 = 3.
-Grau do vértice 2 = 2.
-Grau do vértice 3 = 2.
-Grau do vértice 4 = 4.
-Grau do vértice 5 = 1.
+> Ordem |V| = 5.
+> Tamanho |E| = 6.
+> Grau do vértice 1 = 3.
+> Grau do vértice 2 = 2.
+> Grau do vértice 3 = 2.
+> Grau do vértice 4 = 4.
+> Grau do vértice 5 = 1.
+>
+<img width="451" height="332" alt="ex01" src="https://github.com/user-attachments/assets/5095546d-994c-4b92-993e-6177e0dfe23a" />
+
 
 
 ### Plataformas
