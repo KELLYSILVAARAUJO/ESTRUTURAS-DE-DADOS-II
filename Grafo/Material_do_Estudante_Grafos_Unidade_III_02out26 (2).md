@@ -182,7 +182,7 @@ mão única.
 ------------------------------------------------------------------------
 > V = {1, 2, 3, 4} E = {(1, 2), (2, 3), (3, 4), (4, 1), (1, 3)} Vértice 3: Grau de entrada 2, grau de saída 1 O grafo não dirigido não se
 > enquadra essa situação pois as ruas são de sentido único. O grafo não dirigido não representa sentido em suas arestas.
-<img width="464" height="302" alt="image" src="https://github.com/user-attachments/assets/afcefd08-0087-42c9-a6c5-041235a57b07" />
+<img width="464" height="302" alt="image" src="https://github.com/user-attachments/assets/87468cf1-3f61-4d47-b182-de4f029a052a" />
 
 ------------------------------------------------------------------------
 ## 7. Atividade 5 - Desafio de isomorfismo
