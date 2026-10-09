@@ -172,13 +172,6 @@ mão única.
 6.  Explique por que um grafo não dirigido não representa adequadamente
     essa situação.
 
-    <img width="191" height="173" alt="XaaIIJxyNSbFAEgn" src="https://github.com/user-attachments/assets/aa1c0414-2705-49e8-a19e-027f4e1f2b89" />
-V = {1, 2, 3, 4}
-E = {(1, 2), (1, 3), (2, 4), (3, 4)}
-
-Escolhendo o vértice 1:
-Grau de entrada - 0 (não há setas a apontar para o vértice 1). 
-Grau de saída - 2 (saem duas setas: para o vértice 2 e para o vértice 3). 
 ### Plataformas
 
 -   diagrams.net;
@@ -187,7 +180,11 @@ Grau de saída - 2 (saem duas setas: para o vértice 2 e para o vértice 3).
 -   Google Colab com NetworkX.
 
 ------------------------------------------------------------------------
+> V = {1, 2, 3, 4} E = {(1, 2), (2, 3), (3, 4), (4, 1), (1, 3)} Vértice 3: Grau de entrada 2, grau de saída 1 O grafo não dirigido não se
+> enquadra essa situação pois as ruas são de sentido único. O grafo não dirigido não representa sentido em suas arestas.
+<img width="464" height="302" alt="image" src="https://github.com/user-attachments/assets/afcefd08-0087-42c9-a6c5-041235a57b07" />
 
+------------------------------------------------------------------------
 ## 7. Atividade 5 - Desafio de isomorfismo
 
 A professora apresentará dois grafos para comparação.
