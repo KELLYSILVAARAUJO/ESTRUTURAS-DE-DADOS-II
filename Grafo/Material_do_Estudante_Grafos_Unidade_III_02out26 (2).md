@@ -64,6 +64,15 @@ Considere:
 > **Atenção:** a aresta `(4,4)` é um laço. No cálculo do grau, um laço é
 > contado duas vezes.
 
+Ordem |V| = 5.
+Tamanho |E| = 6.
+Grau do vértice 1 = 3.
+Grau do vértice 2 = 2.
+Grau do vértice 3 = 2.
+Grau do vértice 4 = 4.
+Grau do vértice 5 = 1.
+
+
 ### Plataformas
 
 -   papel e lápis;
@@ -90,11 +99,11 @@ Utilize o grafo construído na Atividade 1.
 
   Vértice   Vértices adjacentes   Arestas incidentes
   --------- --------------------- --------------------
-  1                               
-  2                               
-  3                               
-  4                               
-  5                               
+  1           2, 4 e 5             (1,2), (1,4) e (1,5) 
+  2           1 e 3                (1,2) e (2,3)
+  3           2 e 4                (2,3) e (3,4)
+  4           1, 3 e 4             (1,4), (3,4) e (4,4)
+  5           1                    (1,5)
 
 ### Plataformas
 
@@ -156,6 +165,7 @@ mão única.
     -   seu grau de saída.
 6.  Explique por que um grafo não dirigido não representa adequadamente
     essa situação.
+    
 
 ### Plataformas
 
