@@ -64,6 +64,15 @@ Considere:
 > **Atenção:** a aresta `(4,4)` é um laço. No cálculo do grau, um laço é
 > contado duas vezes.
 
+### Plataformas
+
+-   papel e lápis;
+-   Graph Online;
+-   diagrams.net;
+-   Graphviz;
+-   Google Colab com Python e NetworkX.
+
+------------------------------------------------------------------------
 > Ordem |V| = 5.
 > Tamanho |E| = 6.
 > Grau do vértice 1 = 3.
@@ -74,17 +83,8 @@ Considere:
 >
 <img width="451" height="332" alt="ex01" src="https://github.com/user-attachments/assets/5095546d-994c-4b92-993e-6177e0dfe23a" />
 
+-------------------------------------------------------------------------
 
-
-### Plataformas
-
--   papel e lápis;
--   Graph Online;
--   diagrams.net;
--   Graphviz;
--   Google Colab com Python e NetworkX.
-
-------------------------------------------------------------------------
 
 ## 4. Atividade 2 - Incidência e adjacência
 
