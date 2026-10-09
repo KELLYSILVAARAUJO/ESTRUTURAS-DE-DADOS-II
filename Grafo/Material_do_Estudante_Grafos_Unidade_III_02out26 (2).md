@@ -149,7 +149,10 @@ Crie uma pequena rede de amizades entre essas pessoas.
 -   Google Colab com NetworkX.
 
 ------------------------------------------------------------------------
+> V = {João, Carolina, Maria, Marco} E = {(João, Carolina), (João, Maria), (João, Marco), (Carolina, Maria), (Carolina, Marco), (Maria, Marco)} O > grafo é não dirigido pois a amizade é mútua.
+<img width="421" height="269" alt="image" src="https://github.com/user-attachments/assets/276e269d-165b-4eee-8050-3300f44ce835" />
 
+------------------------------------------------------------------------
 ## 6. Atividade 4 - Modelagem de ruas de mão única
 
 ### Situação
