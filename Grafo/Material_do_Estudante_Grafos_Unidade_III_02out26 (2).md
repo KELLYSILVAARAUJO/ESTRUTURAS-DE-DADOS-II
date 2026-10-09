@@ -165,6 +165,7 @@ mão única.
     -   seu grau de saída.
 6.  Explique por que um grafo não dirigido não representa adequadamente
     essa situação.
+>
     <img width="191" height="173" alt="XaaIIJxyNSbFAEgn" src="https://github.com/user-attachments/assets/aa1c0414-2705-49e8-a19e-027f4e1f2b89" />
 V = {1, 2, 3, 4}
 E = {(1, 2), (1, 3), (2, 4), (3, 4)}
