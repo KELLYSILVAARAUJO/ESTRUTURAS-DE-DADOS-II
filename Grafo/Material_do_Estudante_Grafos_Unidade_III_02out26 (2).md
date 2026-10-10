@@ -103,9 +103,9 @@ Utilize o grafo construído na Atividade 1.
 
 |  Vértice | Vértices adjacentes | Arestas incidentes |
 | :--- | :---: | ---: |
-|  1  | 2, 4 e 5 | (1,2), (1,4) e (1,5) |
-|  2  | 1 e 3  | (1,2) e (2,3) |
-| 3   | 2 e 4  |  (2,3) e (3,4)|
+|1  | 2, 4 e 5 | (1,2), (1,4) e (1,5) |
+|2  | 1 e 3  | (1,2) e (2,3) |
+|3   | 2 e 4  |  (2,3) e (3,4)|
 |4 |  1, 3 e 4 | (1,4), (3,4) e (4,4)|
 |5| 1 | (1,5)|
 
@@ -189,27 +189,25 @@ mão única.
 ------------------------------------------------------------------------
 ## 7. Atividade 5 - Desafio de isomorfismo
 
-A professora apresentará dois grafos para comparação.
-
 ### Faça
 
-1.  Compare a quantidade de vértices.
-2.  Compare a quantidade de arestas.
-3.  Observe os graus dos vértices.
-4.  Procure uma correspondência entre os vértices dos dois grafos.
-5.  Verifique se as adjacências são preservadas.
-6.  Registre o mapeamento encontrado.
-7.  Conclua, justificadamente, se os grafos são isomorfos.
+Dois grafos podem ter desenhos e rótulos diferentes e ainda apresentar a mesma estrutura. Compare os
+grafos a seguir:
+G: V = {1, 2, 3, 4}; E = {(1,2), (2,3), (3,4), (4,1)}
+H: V = {a, b, c, d}; E = {(a,c), (c,b), (b,d), (d,a)}
+O que fazer
+1. Determine a ordem e o tamanho de cada grafo.
+2. Calcule o grau de cada vértice e escreva a sequência de graus de G e H.
+3. Procure uma correspondência entre os vértices de G e os de H.
+4. Verifique, aresta por aresta, se a correspondência preserva as adjacências.
+5. Conclua se os grafos são isomorfos e justifique.
 
 ### Registro sugerido
 
-  Vértice do grafo G   Vértice correspondente no grafo H
-  -------------------- -----------------------------------
+  |Vértice do grafo G |  Vértice correspondente no grafo H|
+ 
                        
-                       
-                       
-                       
-
+            
 > Não considere apenas a aparência dos desenhos. Grafos desenhados de
 > formas diferentes podem apresentar a mesma estrutura.
 
@@ -219,7 +217,47 @@ A professora apresentará dois grafos para comparação.
 -   Graph Online;
 -   diagrams.net.
 
-------------------------------------------------------------------------
+-------------------------------------------------------------------------------------
+5.1- 
+Ordem e Tamanho
+Grafo G: Ordem é 4 (possui os vértices 1, 2, 3, 4) e o Tamanho é 4 (possui 4 arestas).
+Grafo H: Ordem é 4 (possui os vértices a, b, c, d) e o Tamanho é 4 (possui 4 arestas).
+-------------------------------------------------------------------------------------
+5.2-
+Grau de cada vértice e sequência de graus
+Grafo G: O conjunto de arestas é {(1,2), (2,3), (3,4), (4,1)}.   
+Grau do vértice 1: 2 (ligado a 2 e 4)
+Grau do vértice 2: 2 (ligado a 1 e 3)
+Grau do vértice 3: 2 (ligado a 2 e 4)
+Grau do vértice 4: 2 (ligado a 1 e 3)
+Sequência de graus de G: (2, 2, 2, 2)
+
+Grafo H: O conjunto de arestas é {(a,c), (c,b), (b,d), (d,a)}.   
+Grau do vértice a: 2 (ligado a c e d)
+Grau do vértice b: 2 (ligado a c e d)
+Grau do vértice c: 2 (ligado a a e b)
+Grau do vértice d: 2 (ligado a b e a)
+Sequência de graus de H: (2, 2, 2, 2)
+--------------------------------------------------------------------------------------------------------
+5.3 e 5.4-
+Correspondência e preservação das adjacências
+Ao analisar a estrutura, ambos são grafos em formato de ciclo com 4 vértices.
+Podemos mapear caminhando pelas arestas: em G, partimos de 1 -> 2 -> 3 -> 4 -> 1; em H, partimos de a -> c -> b -> d -> a.
+
+|Vértice em G      |      Correspondente em H|
+|1                 |              a|
+|2                 |              c|
+|3                 |              b|
+|4                 |              d|
+
+----------------------------------------------------------------------------------------------------------
+5.5-
+Conclusão e Justificativa
+Sim, os grafos são isomorfos.
+A justificativa é que eles possuem o mesmo número de vértices (ordem 4), o mesmo número de arestas (tamanho 4), a mesma sequência de graus (2, 2, 2, 2) e, mais importante, é possível estabelecer uma 
+função bijetora (o mapeamento da tabela acima) que preserva perfeitamente todas as adjacências originais de ambos os grafos. Ambos representam um ciclo idêntico.
+
+-------------------------------------------------------------------------------------------------------
 
 ## 8. Atividade 6 - Construindo subgrafos
 
@@ -277,8 +315,6 @@ indicada pela professora.
             
             
             
-            
-
 **Sequência final de graus:** `( ______________________________ )`
 
 ### Plataformas
@@ -288,6 +324,35 @@ indicada pela professora.
 -   Python/NetworkX no Google Colab.
 
 ------------------------------------------------------------------------
+
+<img width="328" height="348" alt="graphviz" src="https://github.com/user-attachments/assets/57cb9ec5-9ef9-4cd7-9dbe-aebd23e0fa4a" /> 
+
+------------------------------------------------------------------------
+7.2-
+Tabela de Graus Obtidos
+De acordo com a construção acima, preenchemos a tabela:
+|Vértice           |     Grau obtido|
+|A                 |     6 (conectado a B, C, D, E, F, G)|
+|B                 |     4 (conectado a A, C, D, E)|
+|C                 |     4 (conectado a A, B, D, H)|
+|D                 |     3 (conectado a A, B, C)|
+|E                 |     3 (conectado a A, B, F)|
+|F                 |     2 (conectado a A, E)|
+|G                 |     1 (conectado a A)|
+|H                 |     1 (conectado a C)|
+
+--------------------------------------------------------------------------
+7.3-
+Conjunto de arestas E:
+E = {(A,B), (A,C), (A,D), (A,E), (A,F), (A,G), (B,C), (B,D), (B,E), (C,D), (C,H), (E,F)}
+Sequência obtida:
+(1, 1, 2, 3, 3, 4, 4, 6) (ordenada de forma não decrescente, conforme solicitado).
+Soma dos graus:1 + 1 + 2 + 3 + 3 + 4 + 4 + 6 = 24
+Número de arestas:Contando os pares no conjunto E, temos 12 arestas.
+A soma dos graus é 24. Duas vezes o número de arestas é 2 X 12 = 24. 
+Isso comprova o Teorema do Aperto de Mãos (ou Lema dos Apertos de Mão).
+
+----------------------------------------------------------------------------
 
 ## 10. Plataformas recomendadas
 
