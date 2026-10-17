@@ -93,34 +93,33 @@ ________________________________________________________________
 ## 8. Passo a passo: represente o grafo em Python
 A lista de adjacência registra, para cada usuário, os nomes de seus amigos. Digite o código em Python (por exemplo, no Google Colab ou em outro ambiente disponível).
 
-```python
-rede = {
-    "Ana": ["Bruno", "Carla"],
-    "Bruno": ["Ana", "Carla", "Diego"],
-    "Carla": ["Ana", "Bruno", "Elisa"],
-    "Diego": ["Bruno", "Elisa", "Felipe"],
-    "Elisa": ["Carla", "Diego", "Felipe"],
-    "Felipe": ["Diego", "Elisa"]
+rede_direcionada = {
+    "ANA": ["Bruno", "Carlos"],
+    "Bruno": ["Carlos", "Diego"],
+    "Carlos": ["Elisa"],
+    "Elisa": ["Felipe"],
+    "Diego": ["Elisa", "Felipe"],
+    "Felipe": []
 }
 
-# Quantidade de usuarios
-n = len(rede)
+n = len(rede_direcionada)
 
-# Calcule o grau de cada usuario
-for usuario, amigos in rede.items():
-    print(usuario, "tem", len(amigos), "conexoes")
+print("--- Grau de Saída dos Usuários ---")
+for usuario, destinos in rede_direcionada.items():
+    print(f"{usuario} aponta para {len(destinos)} usuários: {destinos}")
 
-# A soma dos graus conta cada amizade duas vezes
-soma_graus = sum(len(amigos) for amigos in rede.values())
-arestas = soma_graus // 2
+total_arestas = sum(len(destinos) for destinos in rede_direcionada.values())
 
-print("Total de usuarios:", n)
-print("Total de amizades:", arestas)
+densidade = total_arestas / (n * (n - 1))
 
-# Densidade do grafo
-densidade = (2 * arestas) / (n * (n - 1))
+print("\n--- Métricas da Rede Direcionada ---")
+print(f"Total de usuários (V): {n}")
+print(f"Total de arestas direcionadas (E): {total_arestas}")
 print(f"Densidade: {densidade:.2%}")
-```
+
+
+<img width="528" height="359" alt="image" src="https://github.com/user-attachments/assets/0b521afc-4c50-4787-846b-51c6bfddc6f0" />
+
 
 ### Entenda o código
 1. `rede` guarda os usuários e suas listas de amigos.
