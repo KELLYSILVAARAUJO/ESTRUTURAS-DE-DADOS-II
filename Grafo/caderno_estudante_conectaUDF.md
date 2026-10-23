@@ -19,17 +19,17 @@ Neste projeto, a amizade é recíproca. Portanto, usamos um **grafo não direcio
 |---|---|
 | A | Ana |
 | B | Bruno |
-| C | Carla |
+| C | Carlos |
 | D | Diego |
 | E | Elisa |
 | F | Felipe |
 
 As amizades são:
 1. Ana — Bruno
-2. Ana — Carla
-3. Bruno — Carla
+2. Ana — Carlos
+3. Bruno — Carlos
 4. Bruno — Diego
-5. Carla — Elisa
+5. Carlos — Elisa
 6. Diego — Elisa
 7. Diego — Felipe
 8. Elisa — Felipe
@@ -49,15 +49,15 @@ Conte quantas linhas chegam a cada círculo. Registre o resultado.
 
 | Usuário | Amigos diretos | Grau |
 |---|---|---:|
-| Ana | Bruno - Carla | 2 |
-| Bruno | Ana - Carla - Diego | 3 |
+| Ana | Bruno - Carlos | 2 |
+| Bruno | Ana - Carlos - Diego | 3 |
 | Carla | Ana - Bruno - Elisa | 3 |
 | Diego | Bruno - Elisa - Felipe | 3 |
-| Elisa | Carla - Diego - Felipe | 3 |
+| Elisa | Carlos - Diego - Felipe | 3 |
 | Felipe | Diego - Elisa | 2 |
 
 **Pergunta 1:** quem tem mais conexões diretas?  
-Resposta: Bruno, Carla, Diego e Elisa.
+Resposta: Bruno, Carlos, Diego e Elisa.
 ## 6. Passo a passo: calcule o número de amizades
 Some todos os graus. Como cada amizade conecta dois usuários, cada aresta é contada duas vezes.
 
@@ -136,7 +136,7 @@ Exemplo de registro:
 
 - Quantas arestas há no caminho? 3
 - Você encontrou outro caminho com a mesma quantidade de arestas? Qual?
-Ana → Carla → Elisa → Felipe
+Ana → Carlos → Elisa → Felipe
 
 ## 10. Desafio em grupo
 Amplie a rede social:
@@ -144,13 +144,13 @@ Amplie a rede social:
 2. Crie no mínimo cinco novas amizades.  <img width="2859" height="1176" alt="image" src="https://github.com/user-attachments/assets/6024af40-d351-49f5-923b-b35c87ee30ea" />
 
 3. Atualize a lista de adjacência no Python. rede_ampliada = {
-  "Ana": ["Bruno", "Carla"],
-  "Bruno": ["Ana", "Carla", "Diego", "Gabriel"],
+  "Ana": ["Bruno", "Carlos"],
+  "Bruno": ["Ana", "Carlos", "Diego", "Gabriel"],
   "Carla": ["Ana", "Bruno", "Elisa", "Gabriel"],
   "Diego": ["Bruno", "Elisa", "Felipe"],
-  "Elisa": ["Carla", "Diego", "Felipe", "Igor"],
+  "Elisa": ["Carlos", "Diego", "Felipe", "Igor"],
   "Felipe": ["Diego", "Elisa", "Helena"],
-  "Gabriel": ["Bruno", "Carla", "Julia"],
+  "Gabriel": ["Bruno", "Carlos", "Julia"],
   "Helena": ["Felipe", "Igor"],
   "Igor": ["Elisa", "Helena"],
   "Julia": ["Gabriel"]
@@ -179,8 +179,8 @@ mais_conectados = [u for u, a in rede_ampliada.items() if len(a) == maior_grau]
 
 print(f"Usuários mais conectados (Grau {maior_grau}): {', '.join(mais_conectados)}")
 4. Recalcule os graus, o total de arestas e a densidade.
-5. Compare a densidade antes e depois da ampliação. | Usuário | Amigos diretos | Grau | |---|---|---:| | Ana | Bruno - Carla | 2 | | Bruno | Ana - Carla - Diego - Gabriel | 4 | | Carla | Ana - Bruno - Elisa - Gabriel | 4 | | Diego | Bruno - Elisa - Felipe | 3 | | Elisa | Carla - Diego - Felipe - Igor | 4 | | Felipe | Diego - Elisa - Helena | 3 | | Gabriel | Bruno - Carla - Julia | 3 | | Helena | Felipe - Igor | 2 | | Igor | Elisa - Helena | 2 | | Julia | Gabriel | 1 |
-6. Identifique os usuários com mais conexões. Os usuários com mais conexão são Bruno, Carla e Elisa.
+5. Compare a densidade antes e depois da ampliação. | Usuário | Amigos diretos | Grau | |---|---|---:| | Ana | Bruno - Carlos | 2 | | Bruno | Ana - Carlos - Diego - Gabriel | 4 | | Carlos | Ana - Bruno - Elisa - Gabriel | 4 | | Diego | Bruno - Elisa - Felipe | 3 | | Elisa | Carlos - Diego - Felipe - Igor | 4 | | Felipe | Diego - Elisa - Helena | 3 | | Gabriel | Bruno - Carlos - Julia | 3 | | Helena | Felipe - Igor | 2 | | Igor | Elisa - Helena | 2 | | Julia | Gabriel | 1 |
+6. Identifique os usuários com mais conexões. Os usuários com mais conexão são Bruno, Carlos e Elisa.
 7. QExplique como a rede poderia recomendar uma nova amizade.
 Resposta: Se duas pessoas não são amigas, mas têm três amigos em comum, é provável que se conheçam. A rede pode usar essa informação para sugerir a amizade, mostrando quem são os amigos em comum.
 ## 11. Entrega
